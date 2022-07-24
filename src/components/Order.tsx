@@ -27,13 +27,12 @@ type Props = IPressableProps & {
 
 export function Order({ data, ...rest }: Props) {
   const { colors } = useTheme();
-  const statusColor =
-    data.status === "open" ? colors.secondary[700] : colors.green[300];
+  const statusColor = data.status === "open" ? colors.secondary[700] : colors.green[300];
 
   return (
     <Pressable {...rest}>
       <HStack
-        bg="green.600"
+        bg="gray.600"
         mb={4}
         alignItems="center"
         justifyContent="space-between"
